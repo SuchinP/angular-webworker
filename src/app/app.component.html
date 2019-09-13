@@ -2,3 +2,18 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+
+
+<div *ngFor="let dashboardComponentWizard of dashboardPermissionChart">
+  {{dashboardComponentWizard.id}} :  {{dashboardComponentWizard.name}}
+</div>
+
+<div>
+  <button (click)="startWebWorker()" type="button">Start Web Worker</button>
+</div>
+<div>
+    <button (click)="startMain()" type="button">Start Main</button>
+</div>
+<div *ngIf="loading" class="centered">
+    l
+</div>
